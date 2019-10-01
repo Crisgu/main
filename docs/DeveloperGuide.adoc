@@ -355,6 +355,85 @@ Use case ends.
 +
 Use case resumes at step 2.
 
+=== Use case: Edit Event in Event List
+
+*MSS*
+
+1.  User requests to view the company’s current list of events.
+2.AddMin+ shows a list of events, with each event containing a unique Event ID.
+3.User specifies Event ID, and list the details of the event to edit
+4.AddMin+ edits and saves the updated event details.
++
+Use case ends.
+
+*Extensions*
+
+*3a Event ID given is invalid.
+	**3a1.AddMin+ shows an error message and refuses the edit.
+	Use case ends.
+*3b No details to edit were specified, or is of the wrong input format
+	**3b1. AddMin+ displays an error message warning the user that no details were edited.
+	Use Case Ends
+*3c Edit Command is of wrong input format
+	**3c1. AddMin+ displays an error message 
+ 
+ === Use case: Allocate Manpower to Event manually
+
+*MSS*
+
+1.AddressBook shows a list of persons / events
+2.User requests to add a specific person to a specific event
+3.Person added.
++
+Use case ends.
+
+*Extensions*
+
+*1.List does not exist
+  Use case ends.
+*2.The PersonId/EventId is invalid.
+  **2a.AddressBook shows an error message.
+    Use case resumes at step 2.
+     
+ === Use case: Generate Employee PaySlip
+
+*MSS*
+
+1.User requests to list employee
+2.EmployeeBook shows a list of employees
+3.User requests to generate a payslip document of a specific employee in the list by using a specific employee ID. 
+4.AddMin+ generates a document of the pay slip of the employee.
+
++
+Use case ends.
+
+*Extensions*
+
+*1.List does not exist
+  Use case ends.
+*2.The given employee number given is invalid.
+  **2a.AddressBook shows an error message.
+    Use case resumes at step 2.
+     
+=== Use case: Search Events
+*MSS*
+
+1.User requests to search specific events
+2.AddMin+ shows the searching result
+
++
+Use case ends.
+
+*Extensions*
+
+*1.List does not exist
+  Use case ends.
+*2.The given event’s detail is invalid.
+  **2a.AddressBook shows an error message.
+    Use case resumes at step 2.
+
+
+
 _{More to be added}_
 
 [appendix]
