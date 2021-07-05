@@ -1,4 +1,4 @@
-= AddressBook Level 3 - Developer Guide
+= AddMin+ - Developer Guide
 :site-section: DeveloperGuide
 :toc:
 :toc-title:
@@ -279,11 +279,11 @@ Refer to the guide <<DevOps#, here>>.
 
 *Target user profile*:
 
-* has a need to help HR manage events and employees
-* prefer desktop apps over other types
-* can type fast
-* prefers typing over mouse input
-* is reasonably comfortable using CLI apps
+* Has a need to help HR manage events and employees
+* Prefer desktop apps over other types
+* Can type fast
+* Prefers typing over mouse input
+* Is reasonably comfortable using CLI apps
 
 *Value proposition*: manage events and employees easier than enterprise apps commonly used such as Microsoft Excel and Microsoft Word.
 
@@ -327,17 +327,17 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 [appendix]
 == Use Cases
 
-(For all use cases below, the *System* is the `AddressBook` and the *Actor* is the `user`, unless specified otherwise)
+(For all use cases below, the *System* is the `AddMin+` and the *Actor* is the `user`, unless specified otherwise)
 
 [discrete]
 === Use case: Delete person
 
 *MSS*
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1.  User requests to list events and employees
+2.  AddMin+ shows a list of events and employees
+3.  User requests to delete a specific event or employee in the list
+4.  AddMin+ deletes the event and employee
 +
 Use case ends.
 
@@ -351,7 +351,7 @@ Use case ends.
 * 3a. The given index is invalid.
 +
 [none]
-** 3a1. AddressBook shows an error message.
+** 3a1. AddMin+ shows an error message.
 +
 Use case resumes at step 2.
 
